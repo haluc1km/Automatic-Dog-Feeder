@@ -171,7 +171,7 @@ def display_message():
 
 def read_email():
         mail = imaplib.IMAP4_SSL('imap.zoho.com', 993)
-        mail.login('wilsontreats@zohomail.com','dCL2RY7GjhLr')
+        mail.login('USERNAME','PASSWORD')
         mail.select('inbox')
         (retcode, messages) = mail.search(None, 'UNSEEN')
         if retcode == 'OK':
